@@ -1,0 +1,28 @@
+data:
+  evfile : PG1553.lst
+  scfile : L1511031432171D651E7F63_SC00.fits
+
+binning:
+  roiwidth   : 10.0
+  binsz      : 0.1
+  binsperdec : 8
+
+selection :
+  emin : 100
+  emax : 300000
+  zmax    : 90
+  evclass : 128
+  evtype  : 3
+  target : '3FGL J1555.7+1111'
+
+gtlike:
+  edisp : True
+  irfs : 'P8R2_SOURCE_V6'
+  edisp_disable : ['isodiff','galdiff']
+
+model:
+  src_roiwidth : 15.0
+  galdiff  : 'diffuse/gll_iem_v07.fits'
+  isodiff  : 'diffuse/iso_P8R2_SOURCE_V6_v06.txt'
+  catalogs : ['4FGL']
+  
