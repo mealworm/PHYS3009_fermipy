@@ -3,6 +3,14 @@ channels:
   - fermi
   - conda-forge
 dependencies:
-  - fermitools::fermi=2.0.8
-  - fermipy::conda-forge
+  - python
+  - pyyaml
+  - numpy>=1.16
+  - scipy
+  - astropy<4
+  - matplotlib
+  - healpy
+  - astropy-healpix
+  - gammapy>=0.18
+  - fermitools
   
