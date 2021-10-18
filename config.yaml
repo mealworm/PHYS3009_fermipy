@@ -13,7 +13,7 @@ selection :
   zmax    : 90
   evclass : 128
   evtype  : 3
-  target : '3FGL J1555.7+1111'
+  target : 'PG 1553+113'
 
 gtlike:
   edisp : True
