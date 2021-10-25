@@ -1,6 +1,6 @@
 data:
   evfile : PG1553.lst
-  scfile : L1511031432171D651E7F63_SC00.fits
+  scfile : data/L211025154921445A2D9929_SC00.fits
 
 binning:
   roiwidth   : 10.0
