@@ -13,7 +13,7 @@ selection :
   zmax    : 90
   evclass : 128
   evtype  : 3
-  target : 'PG 1553+113'
+  target : 'PKS 2155-304'
 
 gtlike:
   edisp : True
