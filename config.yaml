@@ -5,7 +5,7 @@ data:
 binning:
   roiwidth   : 10.0
   binsz      : 0.1
-  binsperdec : 8
+  binsperdec : 4
 
 selection :
   emin : 100
