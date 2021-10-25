@@ -1,5 +1,5 @@
 data:
-  evfile : PG1553.lst
+  evfile : PKS2155.lst
   scfile : data/L211025154921445A2D9929_SC00.fits
 
 binning:
