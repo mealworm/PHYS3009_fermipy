@@ -1,6 +1,7 @@
 data:
   evfile : PKS2155.lst
   scfile : data/L211025154921445A2D9929_SC00.fits
+  ltcube : ltcube_00.fits
 
 binning:
   roiwidth   : 10.0
@@ -10,11 +11,8 @@ binning:
 selection :
   emin : 100
   emax : 300000
-<<<<<<< HEAD
   tmin : 241401601
   tmax : 257385601
-=======
->>>>>>> 224d783fbd3d1a4428228b1b30e8ca88845bac19
   zmax    : 90
   evclass : 128
   evtype  : 3
