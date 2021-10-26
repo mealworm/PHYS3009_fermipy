@@ -10,6 +10,8 @@ binning:
 selection :
   emin : 100
   emax : 300000
+  tmin : 241401601
+  tmax : 257385601
   zmax    : 90
   evclass : 128
   evtype  : 3

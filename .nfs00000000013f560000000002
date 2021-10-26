@@ -1,0 +1,691 @@
+2021-10-26 12:02:30 INFO    GTAnalysis.__init__(): 
+--------------------------------------------------------------------------------
+fermipy version v1.0.1 
+ScienceTools version 2.0.8
+2021-10-26 12:02:31 DEBUG   GTAnalysis.print_config(): Configuration:
+binning:
+  binsperdec: 4.0
+  binsz: 0.1
+  coordsys: CEL
+  enumbins: null
+  hpx_ebin: true
+  hpx_order: 10
+  hpx_ordering_scheme: RING
+  npix: null
+  proj: AIT
+  projtype: WCS
+  roiwidth: 10.0
+components: []
+data:
+  cacheft1: true
+  evfile: PKS2155.lst
+  ltcube: null
+  scfile: data/L211025154921445A2D9929_SC00.fits
+extension:
+  fit_ebin: false
+  fit_position: false
+  fix_shape: false
+  free_background: false
+  free_radius: null
+  make_plots: false
+  make_tsmap: true
+  psf_scale_fn: null
+  save_model_map: false
+  spatial_model: RadialGaussian
+  sqrt_ts_threshold: null
+  tsmap_fitter: tsmap
+  update: false
+  width: []
+  width_max: 1.0
+  width_min: 0.01
+  width_nstep: 21
+  write_fits: true
+  write_npy: true
+fileio:
+  logfile: /mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/fermipy.log
+  outdir: /mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy
+  outdir_regex:
+  - \.fits$|\.fit$|\.xml$|\.npy$|\.png$|\.pdf$|\.yaml$
+  savefits: true
+  scratchdir: /scratch
+  usescratch: false
+  workdir: null
+  workdir_regex:
+  - \.fits$|\.fit$|\.xml$|\.npy$
+gtlike:
+  bexpmap: null
+  bexpmap_base: null
+  bexpmap_roi: null
+  bexpmap_roi_base: null
+  convolve: true
+  edisp: true
+  edisp_bins: -1
+  edisp_disable:
+  - isodiff
+  - galdiff
+  expscale: null
+  irfs: P8R2_SOURCE_V6
+  llscan_npts: 20
+  minbinsz: 0.05
+  resample: true
+  rfactor: 2
+  src_expscale: {}
+  srcmap: null
+  srcmap_base: null
+  use_external_srcmap: false
+  use_scaled_srcmap: false
+  wmap: null
+lightcurve:
+  binsz: 86400.0
+  free_background: false
+  free_params: []
+  free_radius: null
+  free_sources: []
+  make_plots: false
+  max_free_sources: 5
+  multithread: false
+  nbins: null
+  nthread: null
+  outdir: null
+  save_bin_data: true
+  shape_ts_threshold: 16.0
+  systematic: 0.02
+  time_bins: []
+  use_local_ltcube: true
+  use_scaled_srcmap: false
+  write_fits: true
+  write_npy: true
+localize:
+  dtheta_max: 0.5
+  fix_shape: false
+  free_background: false
+  free_radius: null
+  make_plots: false
+  nstep: 5
+  tsmap_fitter: tsmap
+  update: true
+  write_fits: true
+  write_npy: true
+logging:
+  chatter: 3
+  prefix: ''
+  verbosity: 3
+ltcube:
+  binsz: 1.0
+  dcostheta: 0.025
+  phibins: 0
+  use_local_ltcube: false
+mc:
+  seed: null
+model:
+  assoc_xmatch_columns:
+  - 3FGL_Name
+  catalogs:
+  - 4FGL
+  diffuse: []
+  diffuse_dir: []
+  diffuse_xml: []
+  extdir: null
+  extract_diffuse: false
+  galdiff:
+  - diffuse/gll_iem_v07.fits
+  isodiff:
+  - diffuse/iso_P8R2_SOURCE_V6_v06.txt
+  limbdiff: []
+  merge_sources: true
+  sources: []
+  src_radius: null
+  src_radius_roi: null
+  src_roiwidth: 15.0
+optimizer:
+  init_lambda: 0.0001
+  max_iter: 100
+  min_fit_quality: 2
+  optimizer: MINUIT
+  retries: 3
+  tol: 0.001
+  verbosity: 0
+plotting:
+  catalogs: []
+  cmap: magma
+  cmap_resid: RdBu_r
+  figsize:
+  - 8.0
+  - 6.0
+  format: png
+  graticule_radii: []
+  interactive: false
+  label_ts_threshold: 0.0
+  loge_bounds: []
+residmap:
+  exclude: []
+  loge_bounds: []
+  make_plots: false
+  model: {}
+  use_weights: false
+  write_fits: true
+  write_npy: true
+roiopt:
+  max_free_sources: 5
+  npred_frac: 0.95
+  npred_threshold: 1.0
+  shape_ts_threshold: 25.0
+  skip: []
+sed:
+  bin_index: 2.0
+  cov_scale: 3.0
+  free_background: false
+  free_pars: []
+  free_radius: null
+  make_plots: false
+  ul_confidence: 0.95
+  use_local_index: false
+  write_fits: true
+  write_npy: true
+selection:
+  convtype: null
+  dec: null
+  emax: 300000.0
+  emin: 100.0
+  evclass: 128
+  evtype: 3
+  filter: null
+  glat: null
+  glon: null
+  logemax: null
+  logemin: null
+  phasemax: null
+  phasemin: null
+  ra: null
+  radius: null
+  roicut: 'no'
+  target: PKS 2155-304
+  tmax: null
+  tmin: null
+  zmax: 90.0
+sourcefind:
+  free_params: []
+  max_iter: 5
+  min_separation: 1.0
+  model: {}
+  multithread: false
+  nthread: null
+  sources_per_iter: 4
+  sqrt_ts_threshold: 5.0
+  tsmap_fitter: tsmap
+tscube:
+  cov_scale: -1.0
+  cov_scale_bb: -1.0
+  do_sed: true
+  exclude: []
+  init_lambda: 0.0
+  max_iter: 30
+  model: {}
+  nnorm: 10
+  norm_sigma: 5.0
+  remake_test_source: false
+  st_scan_level: 0
+  tol: 0.001
+  tol_type: 0
+tsmap:
+  exclude: []
+  loge_bounds: []
+  make_plots: false
+  max_kernel_radius: 3.0
+  model: {}
+  multithread: false
+  nthread: null
+  write_fits: true
+  write_npy: true
+
+2021-10-26 12:02:32 DEBUG   GTAnalysis._create_component(): Creating Analysis Component: 00
+2021-10-26 12:02:32 DEBUG   GTBinnedAnalysis.__init__(): Automatically setting selection radius to 7.5710678118654755 deg
+2021-10-26 12:19:15 INFO    GTAnalysis.__init__(): 
+--------------------------------------------------------------------------------
+fermipy version v1.0.1 
+ScienceTools version 2.0.8
+2021-10-26 12:19:15 DEBUG   GTAnalysis.print_config(): Configuration:
+binning:
+  binsperdec: 4.0
+  binsz: 0.1
+  coordsys: CEL
+  enumbins: null
+  hpx_ebin: true
+  hpx_order: 10
+  hpx_ordering_scheme: RING
+  npix: null
+  proj: AIT
+  projtype: WCS
+  roiwidth: 10.0
+components: []
+data:
+  cacheft1: true
+  evfile: PKS2155.lst
+  ltcube: null
+  scfile: data/L211025154921445A2D9929_SC00.fits
+extension:
+  fit_ebin: false
+  fit_position: false
+  fix_shape: false
+  free_background: false
+  free_radius: null
+  make_plots: false
+  make_tsmap: true
+  psf_scale_fn: null
+  save_model_map: false
+  spatial_model: RadialGaussian
+  sqrt_ts_threshold: null
+  tsmap_fitter: tsmap
+  update: false
+  width: []
+  width_max: 1.0
+  width_min: 0.01
+  width_nstep: 21
+  write_fits: true
+  write_npy: true
+fileio:
+  logfile: /mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/fermipy.log
+  outdir: /mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy
+  outdir_regex:
+  - \.fits$|\.fit$|\.xml$|\.npy$|\.png$|\.pdf$|\.yaml$
+  savefits: true
+  scratchdir: /scratch
+  usescratch: false
+  workdir: null
+  workdir_regex:
+  - \.fits$|\.fit$|\.xml$|\.npy$
+gtlike:
+  bexpmap: null
+  bexpmap_base: null
+  bexpmap_roi: null
+  bexpmap_roi_base: null
+  convolve: true
+  edisp: true
+  edisp_bins: -1
+  edisp_disable:
+  - isodiff
+  - galdiff
+  expscale: null
+  irfs: P8R2_SOURCE_V6
+  llscan_npts: 20
+  minbinsz: 0.05
+  resample: true
+  rfactor: 2
+  src_expscale: {}
+  srcmap: null
+  srcmap_base: null
+  use_external_srcmap: false
+  use_scaled_srcmap: false
+  wmap: null
+lightcurve:
+  binsz: 86400.0
+  free_background: false
+  free_params: []
+  free_radius: null
+  free_sources: []
+  make_plots: false
+  max_free_sources: 5
+  multithread: false
+  nbins: null
+  nthread: null
+  outdir: null
+  save_bin_data: true
+  shape_ts_threshold: 16.0
+  systematic: 0.02
+  time_bins: []
+  use_local_ltcube: true
+  use_scaled_srcmap: false
+  write_fits: true
+  write_npy: true
+localize:
+  dtheta_max: 0.5
+  fix_shape: false
+  free_background: false
+  free_radius: null
+  make_plots: false
+  nstep: 5
+  tsmap_fitter: tsmap
+  update: true
+  write_fits: true
+  write_npy: true
+logging:
+  chatter: 3
+  prefix: ''
+  verbosity: 3
+ltcube:
+  binsz: 1.0
+  dcostheta: 0.025
+  phibins: 0
+  use_local_ltcube: false
+mc:
+  seed: null
+model:
+  assoc_xmatch_columns:
+  - 3FGL_Name
+  catalogs:
+  - 4FGL
+  diffuse: []
+  diffuse_dir: []
+  diffuse_xml: []
+  extdir: null
+  extract_diffuse: false
+  galdiff:
+  - diffuse/gll_iem_v07.fits
+  isodiff:
+  - diffuse/iso_P8R2_SOURCE_V6_v06.txt
+  limbdiff: []
+  merge_sources: true
+  sources: []
+  src_radius: null
+  src_radius_roi: null
+  src_roiwidth: 15.0
+optimizer:
+  init_lambda: 0.0001
+  max_iter: 100
+  min_fit_quality: 2
+  optimizer: MINUIT
+  retries: 3
+  tol: 0.001
+  verbosity: 0
+plotting:
+  catalogs: []
+  cmap: magma
+  cmap_resid: RdBu_r
+  figsize:
+  - 8.0
+  - 6.0
+  format: png
+  graticule_radii: []
+  interactive: false
+  label_ts_threshold: 0.0
+  loge_bounds: []
+residmap:
+  exclude: []
+  loge_bounds: []
+  make_plots: false
+  model: {}
+  use_weights: false
+  write_fits: true
+  write_npy: true
+roiopt:
+  max_free_sources: 5
+  npred_frac: 0.95
+  npred_threshold: 1.0
+  shape_ts_threshold: 25.0
+  skip: []
+sed:
+  bin_index: 2.0
+  cov_scale: 3.0
+  free_background: false
+  free_pars: []
+  free_radius: null
+  make_plots: false
+  ul_confidence: 0.95
+  use_local_index: false
+  write_fits: true
+  write_npy: true
+selection:
+  convtype: null
+  dec: null
+  emax: 300000.0
+  emin: 100.0
+  evclass: 128
+  evtype: 3
+  filter: null
+  glat: null
+  glon: null
+  logemax: null
+  logemin: null
+  phasemax: null
+  phasemin: null
+  ra: null
+  radius: null
+  roicut: 'no'
+  target: PKS 2155-304
+  tmax: 257385601
+  tmin: 241401601
+  zmax: 90.0
+sourcefind:
+  free_params: []
+  max_iter: 5
+  min_separation: 1.0
+  model: {}
+  multithread: false
+  nthread: null
+  sources_per_iter: 4
+  sqrt_ts_threshold: 5.0
+  tsmap_fitter: tsmap
+tscube:
+  cov_scale: -1.0
+  cov_scale_bb: -1.0
+  do_sed: true
+  exclude: []
+  init_lambda: 0.0
+  max_iter: 30
+  model: {}
+  nnorm: 10
+  norm_sigma: 5.0
+  remake_test_source: false
+  st_scan_level: 0
+  tol: 0.001
+  tol_type: 0
+tsmap:
+  exclude: []
+  loge_bounds: []
+  make_plots: false
+  max_kernel_radius: 3.0
+  model: {}
+  multithread: false
+  nthread: null
+  write_fits: true
+  write_npy: true
+
+2021-10-26 12:19:17 DEBUG   GTAnalysis._create_component(): Creating Analysis Component: 00
+2021-10-26 12:19:17 DEBUG   GTBinnedAnalysis.__init__(): Automatically setting selection radius to 7.5710678118654755 deg
+2021-10-26 12:19:17 DEBUG   GTBinnedAnalysis.print_config(): Configuration:
+binning:
+  binsperdec: 4.0
+  binsz: 0.1
+  coordsys: CEL
+  enumbins: null
+  hpx_ebin: true
+  hpx_order: 10
+  hpx_ordering_scheme: RING
+  npix: null
+  proj: AIT
+  projtype: WCS
+  roiwidth: 10.0
+data:
+  cacheft1: true
+  evfile: PKS2155.lst
+  ltcube: null
+  scfile: data/L211025154921445A2D9929_SC00.fits
+file_suffix: _00
+fileio:
+  logfile: /mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/fermipy.log
+  outdir: /mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy
+  outdir_regex:
+  - \.fits$|\.fit$|\.xml$|\.npy$|\.png$|\.pdf$|\.yaml$
+  savefits: true
+  scratchdir: /scratch
+  usescratch: false
+  workdir: /mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy
+  workdir_regex:
+  - \.fits$|\.fit$|\.xml$|\.npy$
+gtlike:
+  bexpmap: null
+  bexpmap_base: null
+  bexpmap_roi: null
+  bexpmap_roi_base: null
+  convolve: true
+  edisp: true
+  edisp_bins: -1
+  edisp_disable:
+  - isodiff
+  - galdiff
+  expscale: null
+  irfs: P8R2_SOURCE_V6
+  llscan_npts: 20
+  minbinsz: 0.05
+  resample: true
+  rfactor: 2
+  src_expscale: {}
+  srcmap: null
+  srcmap_base: null
+  use_external_srcmap: false
+  use_scaled_srcmap: false
+  wmap: null
+logging:
+  chatter: 3
+  prefix: ''
+  verbosity: 3
+ltcube:
+  binsz: 1.0
+  dcostheta: 0.025
+  phibins: 0
+  use_local_ltcube: false
+model:
+  assoc_xmatch_columns:
+  - 3FGL_Name
+  catalogs:
+  - 4FGL
+  diffuse: []
+  diffuse_dir: []
+  diffuse_xml: []
+  extdir: null
+  extract_diffuse: false
+  galdiff:
+  - diffuse/gll_iem_v07.fits
+  isodiff:
+  - diffuse/iso_P8R2_SOURCE_V6_v06.txt
+  limbdiff: []
+  merge_sources: true
+  sources: []
+  src_radius: null
+  src_radius_roi: null
+  src_roiwidth: 15.0
+name: '00'
+selection:
+  convtype: null
+  dec: null
+  emax: 300000.0
+  emin: 100.0
+  evclass: 128
+  evtype: 3
+  filter: null
+  glat: null
+  glon: null
+  logemax: !!python/object/apply:numpy.core.multiarray.scalar
+  - &id001 !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - false
+    - true
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    YP1keZLoFUA=
+  logemin: !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AAAAAAAAAEA=
+  phasemax: null
+  phasemin: null
+  ra: null
+  radius: 7.5710678118654755
+  roicut: 'no'
+  target: PKS 2155-304
+  tmax: 257385601
+  tmin: 241401601
+  zmax: 90.0
+
+2021-10-26 12:19:53 INFO    GTAnalysis.setup(): Running setup.
+2021-10-26 12:19:53 INFO    GTBinnedAnalysis.setup(): Running setup for component 00
+2021-10-26 12:19:53 INFO    GTBinnedAnalysis.run_gtapp(): Running gtselect.
+2021-10-26 12:19:53 INFO    GTBinnedAnalysis.run_gtapp(): time -p gtselect infile=/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/evfile_00.txt outfile=/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/ft1_00.fits ra=329.714111328125 dec=-30.225099563598633 rad=7.5710678118654755 tmin=241401601.0 tmax=257385601.0 emin=100.0 emax=300000.0 zmin=0.0 zmax=90.0 evclass=128 evtype=3 convtype=-1 phasemin=0.0 phasemax=1.0 evtable="EVENTS" chatter=3 clobber=yes debug=no gui=no mode="ql"
+2021-10-26 12:19:53 INFO    GTBinnedAnalysis.run_gtapp(): This is gtselect version HEAD
+2021-10-26 12:19:53 INFO    GTBinnedAnalysis.run_gtapp(): Applying filter string: ((EVENT_CLASS&o200) != o0) && angsep(RA,DEC,329.7141113,-30.22509956) < 7.571067812 && ((EVENT_TYPE&o3) != o0) && 100 < ENERGY && ENERGY <= 300000 && 241401601 < TIME && TIME <= 257385601 && 0 < ZENITH_ANGLE && ZENITH_ANGLE <= 90 && gtifilter()
+2021-10-26 12:19:54 INFO    GTBinnedAnalysis.run_gtapp(): Done.
+2021-10-26 12:19:54 INFO    GTBinnedAnalysis.run_gtapp(): Finished gtselect. Execution time: 1.10 s
+2021-10-26 12:19:54 INFO    GTBinnedAnalysis.run_gtapp(): Running gtltcube.
+2021-10-26 12:19:54 INFO    GTBinnedAnalysis.run_gtapp(): time -p gtltcube evfile="/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/ft1_00.fits" evtable="EVENTS" scfile=data/L211025154921445A2D9929_SC00.fits sctable="SC_DATA" outfile=/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/ltcube_00.fits dcostheta=0.025 binsz=1.0 phibins=0 tmin=0.0 tmax=0.0 file_version="1" zmin=0.0 zmax=90.0 chatter=2 clobber=yes debug=no gui=no mode="ql"
+2021-10-26 12:19:54 INFO    GTBinnedAnalysis.run_gtapp(): Working on file data/L211025154921445A2D9929_SC00.fits
+2021-10-26 12:28:48 INFO    GTBinnedAnalysis.run_gtapp(): .....................!
+2021-10-26 12:28:48 INFO    GTBinnedAnalysis.run_gtapp(): Finished gtltcube. Execution time: 534.54 s
+2021-10-26 12:28:48 DEBUG   GTBinnedAnalysis.setup(): Loading LT Cube /mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/ltcube_00.fits
+2021-10-26 12:28:49 DEBUG   GTBinnedAnalysis.setup(): Creating PSF model
+2021-10-26 12:28:50 INFO    GTBinnedAnalysis.run_gtapp(): Running gtbin.
+2021-10-26 12:28:50 INFO    GTBinnedAnalysis.run_gtapp(): time -p gtbin evfile=/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/ft1_00.fits scfile=data/L211025154921445A2D9929_SC00.fits outfile=/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/ccube_00.fits algorithm="ccube" ebinalg="LOG" emin=100.0 emax=300000.0 enumbins=14 ebinfile=NONE tbinalg="LIN" tbinfile=NONE nxpix=100 nypix=100 binsz=0.1 coordsys="CEL" xref=329.714111328125 yref=-30.225099563598633 axisrot=0.0 rafield="RA" decfield="DEC" proj="AIT" hpx_ordering_scheme="RING" hpx_order=3 hpx_ebin=yes hpx_region="" evtable="EVENTS" sctable="SC_DATA" efield="ENERGY" tfield="TIME" chatter=3 clobber=yes debug=no gui=no mode="ql"
+2021-10-26 12:28:50 INFO    GTBinnedAnalysis.run_gtapp(): This is gtbin version HEAD
+2021-10-26 12:28:51 INFO    GTBinnedAnalysis.run_gtapp(): Finished gtbin. Execution time: 1.26 s
+2021-10-26 12:28:51 INFO    GTBinnedAnalysis.run_gtapp(): Running gtexpcube2.
+2021-10-26 12:28:51 INFO    GTBinnedAnalysis.run_gtapp(): time -p gtexpcube2 infile=/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/ltcube_00.fits cmap=none outfile=/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/bexpmap_00.fits irfs="P8R2_SOURCE_V6" evtype=3 edisp_bins=-1 nxpix=360 nypix=180 binsz=1.0 coordsys="CEL" xref=0.0 yref=0.0 axisrot=0.0 proj="CAR" ebinalg="LOG" emin=100.0 emax=300000.0 enumbins=14 ebinfile="NONE" hpx_ordering_scheme="RING" hpx_order=6 bincalc="EDGE" ignorephi=no thmax=180.0 thmin=0.0 table="EXPOSURE" chatter=3 clobber=yes debug=no mode="ql"
+2021-10-26 12:28:51 INFO    GTBinnedAnalysis.run_gtapp(): This is gtexpcube2 version HEAD
+2021-10-26 12:28:51 INFO    GTBinnedAnalysis.run_gtapp(): Using evtype=3 (i.e., FRONT/BACK irfs)
+2021-10-26 12:28:51 INFO    GTBinnedAnalysis.run_gtapp(): ResponseFunctions::load: IRF used: P8R2_SOURCE_V6
+2021-10-26 12:28:51 INFO    GTBinnedAnalysis.run_gtapp(): event_types:  0  1
+2021-10-26 12:28:57 INFO    GTBinnedAnalysis.run_gtapp(): Computing binned exposure map....................!
+2021-10-26 12:28:58 INFO    GTBinnedAnalysis.run_gtapp(): Finished gtexpcube2. Execution time: 6.80 s
+2021-10-26 12:28:58 INFO    GTBinnedAnalysis.run_gtapp(): Running gtexpcube2.
+2021-10-26 12:28:58 INFO    GTBinnedAnalysis.run_gtapp(): time -p gtexpcube2 infile=/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/ltcube_00.fits cmap=none outfile=/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/bexpmap_roi_00.fits irfs="P8R2_SOURCE_V6" evtype=3 edisp_bins=0 nxpix=100 nypix=100 binsz=0.1 coordsys="CEL" xref=329.714111328125 yref=-30.225099563598633 axisrot=0.0 proj="CAR" ebinalg="LOG" emin=100.0 emax=300000.0 enumbins=14 ebinfile="NONE" hpx_ordering_scheme="RING" hpx_order=6 bincalc="EDGE" ignorephi=no thmax=180.0 thmin=0.0 table="EXPOSURE" chatter=3 clobber=yes debug=no mode="ql"
+2021-10-26 12:28:58 INFO    GTBinnedAnalysis.run_gtapp(): This is gtexpcube2 version HEAD
+2021-10-26 12:28:58 INFO    GTBinnedAnalysis.run_gtapp(): Using evtype=3 (i.e., FRONT/BACK irfs)
+2021-10-26 12:28:58 INFO    GTBinnedAnalysis.run_gtapp(): ResponseFunctions::load: IRF used: P8R2_SOURCE_V6
+2021-10-26 12:28:58 INFO    GTBinnedAnalysis.run_gtapp(): event_types:  0  1
+2021-10-26 12:28:59 INFO    GTBinnedAnalysis.run_gtapp(): Computing binned exposure map....................!
+2021-10-26 12:28:59 INFO    GTBinnedAnalysis.run_gtapp(): Finished gtexpcube2. Execution time: 1.61 s
+2021-10-26 12:29:00 INFO    GTBinnedAnalysis.run_gtapp(): Running gtsrcmaps.
+2021-10-26 12:29:00 INFO    GTBinnedAnalysis.run_gtapp(): time -p gtsrcmaps scfile=data/L211025154921445A2D9929_SC00.fits sctable="SC_DATA" expcube=/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/ltcube_00.fits cmap=/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/ccube_00.fits srcmdl=/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/srcmdl_00.xml bexpmap=/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/bexpmap_00.fits wmap=none outfile=/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/srcmap_00.fits irfs="P8R2_SOURCE_V6" evtype=3 convol=yes resample=yes rfactor=2 minbinsz=0.05 ptsrc=yes psfcorr=yes emapbnds=no edisp_bins=-1 copyall=no chatter=3 clobber=yes debug=no gui=no mode="ql"
+2021-10-26 12:29:00 INFO    GTBinnedAnalysis.run_gtapp(): This is gtsrcmaps version HEAD
+2021-10-26 12:29:00 INFO    GTBinnedAnalysis.run_gtapp(): Using evtype=3 (i.e., FRONT/BACK irfs)
+2021-10-26 12:29:00 INFO    GTBinnedAnalysis.run_gtapp(): ResponseFunctions::load: IRF used: P8R2_SOURCE_V6
+2021-10-26 12:29:00 INFO    GTBinnedAnalysis.run_gtapp(): event_types:  0  1
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named 4FGL J2158.8-3013
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named 4FGL J2151.8-3027
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named 4FGL J2159.1-2840
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named 4FGL J2150.7-2810
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named 4FGL J2145.0-3356
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named 4FGL J2137.4-3209
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named 4FGL J2142.5-2552
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named 4FGL J2212.9-2526
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named 4FGL J2200.7-2414
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named 4FGL J2227.9-3031
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named 4FGL J2131.0-2746
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named 4FGL J2221.9-3504
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named 4FGL J2123.8-3148
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named 4FGL J2131.7-2515
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named 4FGL J2141.8-3727
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named 4FGL J2124.7-3358
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named 4FGL J2235.8-3627
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named isodiff
+2021-10-26 12:29:08 INFO    GTBinnedAnalysis.run_gtapp(): Creating source named galdiff
+2021-10-26 12:29:09 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for 4FGL J2123.8-3148 15....................!
+2021-10-26 12:29:10 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for 4FGL J2124.7-3358 15....................!
+2021-10-26 12:29:11 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for 4FGL J2131.0-2746 15....................!
+2021-10-26 12:29:12 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for 4FGL J2131.7-2515 15....................!
+2021-10-26 12:29:13 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for 4FGL J2137.4-3209 15....................!
+2021-10-26 12:29:14 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for 4FGL J2141.8-3727 15....................!
+2021-10-26 12:29:15 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for 4FGL J2142.5-2552 15....................!
+2021-10-26 12:29:16 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for 4FGL J2145.0-3356 15....................!
+2021-10-26 12:29:17 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for 4FGL J2150.7-2810 15....................!
+2021-10-26 12:29:18 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for 4FGL J2151.8-3027 15....................!
+2021-10-26 12:29:19 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for 4FGL J2158.8-3013 15....................!
+2021-10-26 12:29:20 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for 4FGL J2159.1-2840 15....................!
+2021-10-26 12:29:21 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for 4FGL J2200.7-2414 15....................!
+2021-10-26 12:29:22 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for 4FGL J2212.9-2526 15....................!
+2021-10-26 12:29:24 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for 4FGL J2221.9-3504 15....................!
+2021-10-26 12:29:25 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for 4FGL J2227.9-3031 15....................!
+2021-10-26 12:29:26 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for 4FGL J2235.8-3627 15....................!
+2021-10-26 12:29:26 INFO    GTBinnedAnalysis.run_gtapp(): Generating SourceMap for galdiff 15Caught N3tip12TipExceptionE at the top level: File not in FITS or Root format: /mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/diffuse/gll_iem_v07.fits
+2021-10-26 12:29:26 INFO    GTBinnedAnalysis.run_gtapp(): Finished gtsrcmaps. Execution time: 26.65 s
+2021-10-26 12:29:26 INFO    GTBinnedAnalysis.setup(): Finished setup for component 00
+2021-10-26 12:29:26 INFO    GTBinnedAnalysis._create_binned_analysis(): Creating BinnedAnalysis for component 00.
+2021-10-26 12:29:26 DEBUG   GTBinnedAnalysis._create_binned_analysis(): Creating BinnedObs
+2021-10-26 12:29:26 DEBUG   GTBinnedAnalysis._create_binned_analysis(): {'srcMaps': '/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/srcmap_00.fits', 'expCube': '/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/ltcube_00.fits', 'binnedExpMap': '/mnt/storage1/users/chen/PKS2155/PHYS3009_fermipy/bexpmap_00.fits', 'irfs': 'P8R2_SOURCE_V6'}
