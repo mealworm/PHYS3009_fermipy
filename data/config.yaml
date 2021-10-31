@@ -1,6 +1,6 @@
 data:
   evfile : PKS2155.lst
-  scfile : data/L211025154921445A2D9929_SC00.fits
+  scfile : L211025154921445A2D9929_SC00.fits
   ltcube : ltcube_00.fits
 
 binning:
@@ -25,7 +25,7 @@ gtlike:
 
 model:
   src_roiwidth : 15.0
-  galdiff  : 'diffuse/gll_iem_v07.fits'
-  isodiff  : 'diffuse/iso_P8R2_SOURCE_V6_v06.txt'
+  galdiff  : '../diffuse/gll_iem_v07.fits'
+  isodiff  : '../diffuse/iso_P8R2_SOURCE_V6_v06.txt'
   catalogs : ['4FGL']
   
