@@ -13,6 +13,5 @@ dependencies:
   - astropy-healpix
   - gammapy>=0.18
   - clhep=2.4.4.1
-  - xelatex
   - fermitools
   - fermipy
