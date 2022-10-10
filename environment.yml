@@ -6,4 +6,4 @@ dependencies:
   - python
   - pyyaml
   - fermitools
-  - fermipy
+  - fermipy=1.2
