@@ -3,7 +3,8 @@ channels:
   - fermi
   - conda-forge
 dependencies:
-  - python
-  - pyyaml
-  - fermitools
+  - python=3.9
+  - healpy
+  - gammapy
+  - fermitools>=2.2.0
   - fermipy=1.2
