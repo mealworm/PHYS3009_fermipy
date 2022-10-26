@@ -9,7 +9,7 @@ dependencies:
   - scipy=1.6.1
   - astropy=4.2
   - matplotlib=3.3.4
-  - healpy
+  - healpy=1.14
   - astropy-healpix
   - gammapy=0.18
   - fermitools=2.0
