@@ -12,5 +12,5 @@ dependencies:
   - healpy
   - astropy-healpix
   - gammapy=0.18
-  - fermitools=2.0.8
+  - fermitools=2.0
   - fermipy
